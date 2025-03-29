@@ -75,8 +75,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #bd93f9;
+	color: #ffffff;
+	background: #14131D;
 }
 
 #pulseaudio {
@@ -87,8 +87,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #1A1826;
-	background: #FAE3B0;
+	color: #ffffff;
+	background: #14131D;
 }
 
 #battery {
@@ -100,8 +100,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #B5E8E0;
+	color: #ffffff;
+	background: #14131D;
 }
 
 #battery.charging, #battery.plugged {
@@ -134,8 +134,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #F8BD96;
+	color: #ffffff;
+	background: #14131D;
 }
 #clock {
 	margin-top: 6px;
@@ -145,8 +145,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #ABE9B3;
+	color: #ffffff;
+	background: #14131D;
 	/*background: #1A1826;*/
 }
 
@@ -158,8 +158,8 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #DDB6F2;
+	color: #ffffff;
+	background: #14131D;
 }
 
 #cpu {
@@ -170,8 +170,8 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #96CDFB;
+	color: #ffffff;
+	background: #14131D;
 }
 
 #tray {
@@ -183,12 +183,12 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #B5E8E0;
-	background: #161320;
+	color: #ffffff;
+	background: #14131D;
 }
 
 #custom-launcher {
-	font-size: 16px;
+	font-size: 18px;
 	margin-top: 6px;
 	margin-left: 8px;
 	padding-left: 10px;
@@ -196,7 +196,7 @@ window#waybar.hidden {
 	border-radius: 10px;
 	transition: none;
     color: #89DCEB;
-    background: #161320;
+    background: #14131D;
 }
 
 #custom-power {
@@ -228,11 +228,12 @@ window#waybar.hidden {
 #custom-spotify {
 	margin-top: 6px;
 	margin-left: 8px;
+  margin-right: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #161320;
-	background: #F2CDCD;
+	color: #ffffff;
+	background: #14131D;
 }
