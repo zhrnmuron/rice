@@ -41,7 +41,6 @@ setopt hist_find_no_dups
 # Aliases
 
 alias h='Hyprland'
-alias sudo='doas'
 alias f='yazi'
 alias sd='poweroff'
 alias r='reboot'
@@ -49,6 +48,7 @@ alias vim='nvim'
 alias vi='nvim'
 alias zzz='systemctl suspend'
 alias py='python'
+
 # env vars
 
 export PATH="$HOME/.local/bin:$PATH"
