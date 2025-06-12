@@ -5,6 +5,7 @@ This is what it looks like
 
 
 For use on Arch Linux, Hyprland with most of the hypr utilities
+
 Packages:
 dunst fastfetch git firefox grim swappy thunar tumbler nwg-look hyprland hyprlock hyprpicker hyprpolkitagent xdg-desktop-portal-hyprland hyprshot imv kitty neovim npm zsh pavucontrol slurp ttf-font-awesome ttf-jetbrains-mono-nerd ttf-liberation ttf-mononoki-nerd wl-clipboard wlogout wofi waybar
 
