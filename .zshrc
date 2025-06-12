@@ -48,8 +48,9 @@ alias vim='nvim'
 alias vi='nvim'
 alias zzz='systemctl suspend'
 alias py='python'
-
+alias killandroid='sudo waydroid container stop && sudo waydroid session stop'
 # env vars
 
 export PATH="$HOME/.local/bin:$PATH"
+export LD_PRELOAD="/usr/lib/libgio-2.0.so /usr/lib/libgmodule-2.0.so /usr/lib/libglib-2.0.so"
 export PATH=$PATH:/home/binku/.spicetify

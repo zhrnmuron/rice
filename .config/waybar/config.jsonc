@@ -3,8 +3,8 @@
 	// Using margin-bottom with a negative value in order to reduce the space between Hyprland window and waybar
 	"margin-bottom": 7,
 	"margin-top": 7,
-	"modules-left": ["custom/launcher", "cpu","memory", "network","custom/spotify"],
-	"modules-center": ["hyprland/workspaces"],
+	"modules-left": ["hyprland/workspaces","network"],
+	"modules-center": ["hyprland/window"],
 	"modules-right": ["backlight","pulseaudio","clock", "battery", "tray"],
 	
 	"pulseaudio": {
@@ -19,19 +19,19 @@
 	},
 	"network": {
 		// "interface": "wlp2*", // (Optional) To force the use of this interface
-		"format-wifi": "",
-		"format-ethernet": "",
-		"tooltip-format": "{essid} ({signalStrength}%)",
+		"format-wifi": "{essid} ",
+		"format-ethernet": "Ethernet ",
+		"tooltip-format": "Signal Strength: ({signalStrength}%)",
 		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "⚠",
+		"format-disconnected": "Disconnected ⚠",
 		"format-alt": "{ifname}: {ipaddr}/{cidr}"
 		},
 	"backlight": {
 		"tooltip": false,
 		"format": " {}%",
 		"interval":1,
-		"on-scroll-up": "light -A 5",
-		"on-scroll-down": "light -U 5"
+		"on-scroll-up": "brightnessctl s 5%+",
+		"on-scroll-down": "brightnessctl s 5%-"
 	},
     "battery": {
         "states": {
@@ -53,34 +53,13 @@
         "format": "{:%I:%M %p}",
         "tooltip": true,
         "tooltip-format": "{: %A, %B %e %Y}"
-    },
-    "cpu": {
-        "interval": 15,
-        "format": " {usage}%",
-        "max-length": 10
-    },
-    "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "max-length": 10
-    },
-    "custom/spotify": {
-    	"interval": 1,
-	"return-type": "json",
-	"exec": "~/.config/waybar/scripts/spotify.sh",
-	"exec-if": "pgrep spotify",
-	"escape": true
-
-    },
-    "custom/launcher":{
-        "format": " ",
-        "on-click": "wofi --show drun",
-        "on-click-right": "killall wofi"
-    },
-    "custom/power":{
-        "format": " ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh",
-    },
+    }, 
+    "hyprland/window": {
+        "tooltip": false,
+        "format": "{title}",
+        "max-length": 60,
+        "separate-outputs": true
+},
     // The code following below is given in the great documentation for Waybar status bar under Useful Utilities in Hyprland wiki
     "hyrpland/workspaces": {
     	"format": "{icon}",
