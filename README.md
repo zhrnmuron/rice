@@ -1,7 +1,8 @@
 This is what it looks like
 ![ss-20250612-185833](https://github.com/user-attachments/assets/2de6c28f-c8ec-408f-b0e4-8776d17bbdfb)
-![Uploading ss-20250612-190800.png…]()
-![Uploading ss-20250612-190926.png…]()
+![ss-20250612-190800](https://github.com/user-attachments/assets/0218c13b-a5a9-4661-8e9a-317e58abb51b)
+![ss-20250612-190926](https://github.com/user-attachments/assets/ef2df868-8494-4f9f-9b5f-fc7f0de102d4)
+
 
 For use on Arch Linux, Hyprland with most of the hypr utilities
 Packages:
@@ -16,3 +17,5 @@ Why is this package list so hopelessly lost?
 Why is this so ass?
 >too lazy
 
+Wallpaper link?
+>too lazy just google lens it
