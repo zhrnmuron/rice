@@ -53,8 +53,8 @@ echo "preload = $WALLPAPER" > "$CONFIG_FILE"
 echo "wallpaper = $MONITOR,$WALLPAPER" >> "$CONFIG_FILE"
 echo "ipc = true" >> "$CONFIG_FILE"
 
-# --- Symlink current wallpaper to Firefox new tab background ---
+# --- Symlink current wallpaper to Firefox new tab background as well as the current_background.png in the pictures folder, which is used for hyprlock ---
 ln -sf "$WALLPAPER" "$FIREFOX_CHROME_IMG"
-
+ln -sf "$WALLPAPER" "$HOME/Pictures/current_wallpaper.png"
 notify-send "Wallpaper changed" "Desktop and Firefox new tab updated."
 
