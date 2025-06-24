@@ -38,6 +38,15 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# Shit that makes Home and End keys work in the terminal
+
+# Home
+bindkey '\e[H' beginning-of-line
+bindkey '\eOH' beginning-of-line
+# End
+bindkey '\e[F' end-of-line
+bindkey '\eOF' end-of-line
+
 # Aliases
 
 alias h='Hyprland'
