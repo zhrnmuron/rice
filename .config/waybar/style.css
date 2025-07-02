@@ -1,9 +1,13 @@
+@define-color bg #000000;
+@define-color accent #F28FAD;
+@define-color text #ffffff;
+
 * {
 	border: none;
-	border-radius: 10px;
+	border-radius: 8px;
 	font-family: "JetbrainsMono Nerd Font" ;
-	font-size: 17px;
-	min-height: 10px;
+	font-size: 16px;
+	min-height: 8px;
 }
 
 window#waybar {
@@ -21,8 +25,8 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-  color: #ffffff;
-	background: #060D09;
+  color: @text;
+	background: @bg;
 }
 #workspaces {
 	margin-top: 2px;
@@ -30,13 +34,13 @@ window#waybar.hidden {
 	font-size: 4px;
 	margin-bottom: 0px;
 	border-radius: 10px;
-	background: #060D09;
+	background: @bg;
 	transition: none;
 }
 
 #workspaces button {
 	transition: none;
-	color: #ffffff;
+	color: @text;
 	background: transparent;
 	font-size: 16px;
 	border-radius: 0px;
@@ -44,13 +48,13 @@ window#waybar.hidden {
 
 #workspaces button.occupied {
 	transition: none;
-	color: #F28FAD;
+	color: @accent;
 	background: transparent;
 	font-size: 4px;
 }
 
 #workspaces button.active {
-	color: #e3e8fc;
+	color: @text;
         border-top: 0px solid #ABE9B3;
         border-bottom: 1px solid #e3e8fc;
 }
@@ -76,8 +80,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #ffffff;
-	background: #060D09;
+	color: @text;
+	background: @bg;
 }
 
 #pulseaudio {
@@ -88,8 +92,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #ffffff;
-	background: #060D09;
+	color: @text;
+	background: @bg;
 }
 
 #battery {
@@ -101,18 +105,18 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #ffffff;
-	background: #060D09;
+	color: @text;
+	background: @bg;
 }
 
 #battery.charging, #battery.plugged {
-	color: #ffffff;
-    background-color: #060D09;
+	color: @text;
+    background-color: @bg;
 }
 
 #battery.critical:not(.charging) {
-    background-color: #060D09;
-    color: #ffffff;
+    background-color: @bg;
+    color: @text;
     animation-name: blink;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -122,7 +126,7 @@ window#waybar.hidden {
 
 @keyframes blink {
     to {
-        background-color: #BF616A;
+        background-color: @accent;
         color: #B5E8E0;
     }
 }
@@ -135,8 +139,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #ffffff;
-	background: #060D09;
+	color: @text;
+	background: @bg;
 }
 #clock {
 	margin-top: 2px;
@@ -146,8 +150,8 @@ window#waybar.hidden {
 	margin-bottom: 0px;
 	border-radius: 10px;
 	transition: none;
-	color: #ffffff;
-	background: #060D09;
+	color: @text;
+	background: @bg;
 }
 
 #tray {
@@ -159,6 +163,6 @@ window#waybar.hidden {
 	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
-	color: #ffffff;
-	background: #060D09;
+	color: @text;
+	background: @bg;
 }
