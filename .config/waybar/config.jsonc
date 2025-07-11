@@ -1,38 +1,54 @@
 {
-	"layer": "top",
-	// Using margin-bottom with a negative value in order to reduce the space between Hyprland window and waybar
-	"margin-bottom": 7,
-	"margin-top": 7,
-	"modules-left": ["hyprland/workspaces","network"],
-	"modules-center": ["hyprland/window"],
-	"modules-right": ["backlight","pulseaudio","clock", "battery", "tray"],
-	
-	"pulseaudio": {
-		"tooltip": false,
-		"scroll-step": 5,
-		"format": "{icon} {volume}%",
-		"format-muted": "x Muted",
-		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
-		"format-icons": {
-			"default": ["", "", ""]
-		}
-	},
-	"network": {
-		// "interface": "wlp2*", // (Optional) To force the use of this interface
-		"format-wifi": "{essid} ",
-		"format-ethernet": "Ethernet ",
-		"tooltip-format": "Signal Strength: ({signalStrength}%)",
-		"format-linked": "{ifname} (No IP) ",
-		"format-disconnected": "Disconnected ⚠",
-		"format-alt": "{ifname}: {ipaddr}/{cidr}"
-		},
-	"backlight": {
-		"tooltip": false,
-		"format": " {}%",
-		"interval":1,
-		"on-scroll-up": "brightnessctl s 5%+",
-		"on-scroll-down": "brightnessctl s 5%-"
-	},
+    "layer": "top",
+    // Using margin-bottom with a negative value in order to reduce the space between Hyprland window and waybar
+    "margin-bottom": 7,
+    "margin-top": 7,
+    "modules-left": [
+        "hyprland/workspaces",
+        "network",
+        "custom/cliphist"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "clock",
+        "battery",
+        "custom/dnd_focus", // DND/Focus/Normal button
+        "tray"
+    ],
+
+    "pulseaudio": {
+        "tooltip": false,
+        "scroll-step": 5,
+        "format": "{icon} {volume}%",
+        "format-muted": "x Muted",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format-icons": {
+            "default": ["", "", ""]
+        }
+    },
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ",
+        "format-ethernet": "Ethernet ",
+        "tooltip-format": "Signal Strength: ({signalStrength}%)",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
+    "backlight": {
+        "tooltip": false,
+        "format": " {}%",
+        "interval": 1,
+        "on-scroll-up": "brightnessctl s 5%+",
+        "on-scroll-down": "brightnessctl s 5%-"
+    },
+
     "battery": {
         "states": {
             "good": 95,
@@ -45,35 +61,54 @@
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
-	"tray":{
-		"icon-size":18,
-		"spacing": 10
-	},
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+
     "clock": {
         "interval": 60,
-    "format": "{:%Y/%m/%d %H:%M}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-        "format": {
-            "months": "<span color='#ffead3'><b>{}</b></span>",
-            "days": "<span color='#ecc6d9'><b>{}</b></span>",
-            "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-            "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+        "format": "{:%A %d %B %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
         }
-    }
-}
-    }, 
+    },
+
+    "custom/dnd_focus": {
+        "format": "\uf186",
+        "on-click": "~/.config/waybar/scripts/toggle_focus.sh",
+        "tooltip": true,
+        "tooltip-format": "{output}"
+    },
+
+    "custom/cliphist": {
+        "format": "[=]",
+        "tooltip": false,
+        "on-click": "cliphist list | wofi --dmenu | cliphist decode | wl-copy"
+    },
+
     "hyprland/window": {
         "tooltip": false,
         "format": "{title}",
         "max-length": 60,
         "separate-outputs": true
-},
+    },
+
     // The code following below is given in the great documentation for Waybar status bar under Useful Utilities in Hyprland wiki
-    "hyrpland/workspaces": {
-    	"format": "{icon}",
-	"on-scroll-up": "hyprctl dispatch workspace e+1",
-	"on-scroll-down": "hyprctl dispatch workspace e-1",
-	"on-click": "activate"
-	}
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate"
+    }
 }
+
+
+

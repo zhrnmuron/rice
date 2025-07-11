@@ -7,7 +7,7 @@ This is what it looks like
 For use on Arch Linux, Hyprland with most of the hypr utilities
 
 Packages to get it going:
-dunst fastfetch git firefox grim swappy thunar tumbler nwg-look hyprland hyprlock hyprpicker hyprpolkitagent hyprsunset xdg-desktop-portal-hyprland hyprshot imv kitty neovim npm zsh pavucontrol slurp ttf-font-awesome ttf-jetbrains-mono-nerd ttf-apple-emoji wl-clipboard wlogout wofi wofi-emoji waybar
+dunst fastfetch git firefox grim swappy thunar tumbler nwg-look hyprland hyprlock hyprpicker hyprpolkitagent hyprsunset xdg-desktop-portal-hyprland hyprshot imv kitty neovim npm zsh pavucontrol slurp ttf-font-awesome ttf-jetbrains-mono-nerd ttf-apple-emoji wl-clipboard wlogout wofi wofi-emoji waybar cliphist
 
 There's a lot of scripts in .config/hypr/scripts, you may or may not need to make them all executable yourself idk, still working on the install script which will hopefully do it for you
 
