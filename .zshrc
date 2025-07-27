@@ -60,3 +60,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export LD_PRELOAD="/usr/lib/libgio-2.0.so /usr/lib/libgmodule-2.0.so /usr/lib/libglib-2.0.so"
 export PATH=$PATH:/home/$USER/.spicetify
 export TERMINAL=kitty
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/binku/.lmstudio/bin"
+# End of LM Studio CLI section
+

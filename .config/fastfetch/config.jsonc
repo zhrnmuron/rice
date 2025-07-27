@@ -22,11 +22,13 @@
         },
         {
             "type": "cpu",
+            "format": "{name}",
             "key": "│ ├",
             "keyColor": "green"
         },
         {
             "type": "gpu",
+            "format": "{vendor} {name}",
             "key": "│ ├󰍛",
             "keyColor": "green"
         },
@@ -51,7 +53,7 @@
         },
         {
             "type": "os",
-            "key": " OS",
+            "key": " OS",
             "keyColor": "yellow"
         },
         {
@@ -81,11 +83,6 @@
             "keyColor": "blue"
         },
         {
-            "type": "lm",
-            "key": "│ ├",
-            "keyColor": "blue"
-        },
-        {
             "type": "wm",
             "key": "│ ├",
             "keyColor": "blue"
@@ -107,7 +104,7 @@
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌────────────────────Uptime / Age / DT────────────────────┐"
+            "format": "\u001b[90m┌─────────────────Uptime / Age / DT──────────────────┐"
         },
         {
             "type": "command",
@@ -127,7 +124,7 @@
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
         },
         "break",
     ]

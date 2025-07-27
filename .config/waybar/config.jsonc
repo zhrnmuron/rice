@@ -22,7 +22,7 @@
 
     "pulseaudio": {
         "tooltip": false,
-        "scroll-step": 5,
+        "scroll-step": 1,
         "format": "{icon} {volume}%",
         "format-muted": "x Muted",
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -101,13 +101,13 @@
         "separate-outputs": true
     },
 
-    // The code following below is given in the great documentation for Waybar status bar under Useful Utilities in Hyprland wiki
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "on-click": "activate"
     }
+
 }
 
 
