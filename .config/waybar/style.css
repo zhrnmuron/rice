@@ -22,7 +22,7 @@ window#waybar.hidden {
 	margin-top: 2px;
   margin-left: 6px;
 	padding-left: 10px;
-	padding-right: 10px;s
+	padding-right: 10px;
 	border-radius: 10px;
 	transition: none;
   color: @text;
