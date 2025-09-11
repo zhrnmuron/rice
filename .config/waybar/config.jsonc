@@ -88,12 +88,6 @@
         "tooltip-format": "{output}"
     },
 
-    "custom/cliphist": {
-        "format": "[=]",
-        "tooltip": false,
-        "on-click": "cliphist list | wofi --dmenu | cliphist decode | wl-copy"
-    },
-
     "hyprland/window": {
         "tooltip": false,
         "format": "{title}",

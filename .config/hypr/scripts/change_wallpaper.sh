@@ -51,6 +51,7 @@ hyprctl hyprpaper unload unused
 # --- Write to hyprpaper.conf for persistence ---
 echo "preload = $WALLPAPER" > "$CONFIG_FILE"
 echo "wallpaper = $MONITOR,$WALLPAPER" >> "$CONFIG_FILE"
+echo "wallpaper = HDMI-A-5,$WALLPAPER" >> "$CONFIG_FILE"
 echo "ipc = true" >> "$CONFIG_FILE"
 
 # --- Symlink current wallpaper to Firefox new tab background as well as the current_background.png in the pictures folder, which is used for hyprlock ---

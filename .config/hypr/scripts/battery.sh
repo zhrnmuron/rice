@@ -7,9 +7,11 @@ BATTERY_CONF="$CONFIG_DIR/battery.conf"
 
 if [ "$(readlink "$PROFILE_LINK")" = "$(basename "$AC_CONF")" ]; then
     ln -sf "$(basename "$BATTERY_CONF")" "$PROFILE_LINK"
+    sudo -n tlp bat
     PROFILE="Battery"
 else
     ln -sf "$(basename "$AC_CONF")" "$PROFILE_LINK"
+    sudo -n tlp ac
     PROFILE="AC"
 fi
 

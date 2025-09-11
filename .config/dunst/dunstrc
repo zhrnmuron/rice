@@ -56,10 +56,10 @@
 	# dynamic width from 0 to 300
 	# width = (0, 300)
 	# constant width of 300
-	width = 320
+	width = 350
 
 	# The maximum height of a single notification, excluding the frame.
-	height = 500
+	height = 400
 
 	# Position of the notification
 	origin = top-right
@@ -181,24 +181,24 @@
 
 [urgency_low]
 	timeout = 6
-	background = "#0d0f16"
-	foreground = "#CDD6F4"
+	background = "#000000"
+	foreground = "#FFFFFF"
 	frame_color = "#191d24"
 	highlight = "#7ba5dd"
 
 [urgency_normal]
 	# script = ~/.config/dunst/scripts/playNotificationSound.sh
 	timeout = 6
-	background = "#0d0f16"
-	foreground = "#CDD6F4"
+	background = "#000000"
+	foreground = "#FFFFFF"
 	frame_color = "#0d0f16"
 	highlight = "#7ba5dd"
 
 [urgency_critical]
 	script = ~/.config/dunst/scripts/playNotificationSound.sh
 	timeout = 6
-	background = "#0d0f16"
-	foreground = "#CDD6F4"
+	background = "#000000"
+	foreground = "#FFFFFF"
 	frame_color = "#0d0f16"
 	highlight = "#ee6a70"
 
