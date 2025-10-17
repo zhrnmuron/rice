@@ -1,3 +1,5 @@
+I do NOT care about the install script anymore, just copy stuff over yourself.
+
 This is what it looks like
 ![ss-20250612-185833](https://github.com/user-attachments/assets/2de6c28f-c8ec-408f-b0e4-8776d17bbdfb)
 ![ss-20250612-190800](https://github.com/user-attachments/assets/0218c13b-a5a9-4661-8e9a-317e58abb51b)
